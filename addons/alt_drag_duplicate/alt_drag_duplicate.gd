@@ -46,7 +46,7 @@ func handle_gui_input(event: InputEvent) -> int:
 				print_info("Cannot duplicate the tree root")
 				return EditorPlugin.AfterGUIInput.AFTER_GUI_INPUT_PASS
 			
-			undo_redo.create_action("Duplicate Node(s)█████", UndoRedo.MERGE_DISABLE, edited_scene)
+			undo_redo.create_action("Duplicate Node(s)", UndoRedo.MERGE_DISABLE, edited_scene)
 			undo_redo.add_do_method(editor_selection, &"clear")
 			
 			selection.sort_custom(node_comparator)
