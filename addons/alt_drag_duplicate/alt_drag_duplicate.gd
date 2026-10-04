@@ -1,3 +1,6 @@
+# Copyright PureAsbestos, 2026
+# See LICENSE file for more information
+
 @tool
 extends EditorPlugin
 
